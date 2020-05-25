@@ -1,0 +1,15 @@
+brew install lftp
+mkdir -p ~/expression/ref
+cd ~/expression/ref
+
+#ensemblにアクセス
+lftp ftp.ensembl.org/pub/
+ls #存在するディレクトリ・ファイルが表示される
+cd release-95
+cd fasta
+cd homo_sapiens
+cd dna
+ls
+
+#データをダウンロード
+e\get
